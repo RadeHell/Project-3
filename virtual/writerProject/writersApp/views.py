@@ -3,7 +3,7 @@ from django.template import loader
 from django.shortcuts import render
 
 def Main(request):
-  template = loader.get_template('Main.html')
+  template = loader.get_template('home.html')
   return HttpResponse(template.render())
 
 def Writers(request):

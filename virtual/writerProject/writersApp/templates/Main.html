@@ -1,128 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+        {% include 'mojeC.css' %}
+   
+    {% include 'header.html' %}
     <title>Main</title>
 </head>
 <body>   
 
-    {% include 'NavBar.html' %}
+ {% include 'NavBar.html' %}
 
+{% block content %}
+{% endblock %}
 
- <!-- Welcome Section -->
- <section class="welcome-section">
-    <div class="container">
-        <h1 class="display-4">Welcome to Our Site</h1>
-        <p class="lead">Discover the best writers and their remarkable books</p>
-        <a class="btn btn-primary btn-lg" href="{% url 'Writers' %}"">Meet Our Writers</a>
-        <a class="btn btn-secondary btn-lg" href="{% url 'Books' %}">Explore Best Books</a>
-    </div>
-</section>
-
-<!-- Our Writers Section -->
-<section id="writers" class="section writers-section bg-light">
-    <div class="container">
-        <h2 class="text-center">Our Writers</h2>
-        <div class="row">
-            <!-- Writer 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="writer1.jpg" alt="Writer 1" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Writer 1</h5>
-                        <p class="card-text">Award-winning author known for thrilling novels and short stories.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Writer 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="writer2.jpg" alt="Writer 2" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Writer 2</h5>
-                        <p class="card-text">Specializes in historical fiction with critically acclaimed books.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Writer 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="writer3.jpg" alt="Writer 3" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Writer 3</h5>
-                        <p class="card-text">Poet and essayist exploring human emotion and experience.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Best Books Section -->
-<section id="books" class="section books-section">
-    <div class="container">
-        <h2 class="text-center">Best Books</h2>
-        <div class="row">
-            <!-- Book 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="book1.jpg" alt="Book 1" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title 1</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">by Author 1</h6>
-                        <p class="card-text">A brief description of Book 1.</p>
-                        <a href="#" class="btn btn-primary">Buy on Amazon</a>
-                        <a href="#" class="btn btn-secondary">Buy on B&N</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Book 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="book2.jpg" alt="Book 2" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title 2</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">by Author 2</h6>
-                        <p class="card-text">A brief description of Book 2.</p>
-                        <a href="#" class="btn btn-primary">Buy on Amazon</a>
-                        <a href="#" class="btn btn-secondary">Buy on B&N</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Book 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="book3.jpg" alt="Book 3" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Book Title 3</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">by Author 3</h6>
-                        <p class="card-text">A brief description of Book 3.</p>
-                        <a href="#" class="btn btn-primary">Buy on Amazon</a>
-                        <a href="#" class="btn btn-secondary">Buy on B&N</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer id="contact" class="bg-dark text-white text-center py-4">
-    <p>&copy; 2024 Our Site. All rights reserved.</p>
-    <p>Contact us at <a href="mailto:info@oursite.com" class="text-white">info@oursite.com</a></p>
-</footer>
-
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% include 'footer.html' %}
 
 
 
