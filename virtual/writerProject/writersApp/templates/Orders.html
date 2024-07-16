@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'mojeC.css' %}
+    <title>Orders</title>
+</head>
+<body>   
+
+    {% include 'NavBar.html' %}
+
+  <!-- Header -->
+  <header class= bg-white text-black text-center py-5">
+    <h1>Orders</h1>
+    <p>Here may be found summary of orderds</p>
+
+
+    <main class="content2 container my-5 ">
+
+    <form method="post">
+       {% csrf_token %}
+       {{ form.as_p }}
+       <button type="submit">Submit</button>
+    </form>
+    
+    </main>
+
+
+{% include 'footer.html' %}
+</header>
+
+
+
+
+
+</body>
+</html>

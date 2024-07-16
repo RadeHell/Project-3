@@ -13,3 +13,15 @@ def Writers(request):
 def Books(request):
   template = loader.get_template('BestBooks.html')
   return HttpResponse(template.render())
+
+def Orders(request):
+  if request.method =="POST":
+    form = Order(render.POST)
+    if form.is_valid():
+      first_name = form.cleaned_data['first_name']
+      last_name = form.cleaned_data['last_name']
+      greeting = f"Hi, {first_name} {last_name}!"
+      print("greetins")
+      return render(request, 'home.html')
+  else:
+    form = OrderForm()
