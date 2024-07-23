@@ -14,6 +14,14 @@ def Books(request):
   template = loader.get_template('BestBooks.html')
   return HttpResponse(template.render())
 
+def Home(request):
+  template = loader.get_template('homepage.html')
+  return HttpResponse(template.render())
+
+def About(request):
+  template = loader.get_template('aboutpage.html')
+  return HttpResponse(template.render())
+
 def Orders(request):
   if request.method =="POST":
     form = Order(render.POST)

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% include 'mojeC.css' %}
+   
+    {% include 'header.html' %}
+    <title>Aboutpage</title>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+
+
+
+    <div class="container mt-5">
+        <h1 class="text-center">About Us</h1>
+        <p class="text-center">We are the best at being the worst!</p>
+    
+        <div class="row mt-4">
+          <div class="col-md-4 team-member">
+            <div class="profile-pic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUic7_a0esjVIQct3pxXUDYsIPzUfelhjhg8iQ5-PB4Ai0sk1RYqoSJ9GQnSbGifLk4CU&usqp=CAU" alt="Writer 3" class="card-img-top profile-img">
+            </div>
+            <h3>John Doe</h3>
+            <p>Chief Nonsense Officer</p>
+            <p>John is responsible for all things that make no sense. His favorite hobby is watching paint dry.</p>
+          </div>
+          <div class="col-md-4 team-member">
+            <div class="profile-pic">
+                <img src="https://www.shutterstock.com/image-photo/girlfriend-arguing-boyfriend-being-intense-260nw-1186676938.jpg" alt="Writer 3" class="card-img-top profile-img">
+            </div>
+            <h3>Jane Smith</h3>
+            <p>Head of Useless Facts</p>
+            <p>Jane knows every useless fact there is to know. Ask her anything pointless, and she’ll have an answer!</p>
+          </div>
+          <div class="col-md-4 team-member">
+            
+            <div class="profile-pic">
+                    <img src="https://thumbs.dreamstime.com/z/dumb-people-surprised-20497284.jpg" alt="Writer 3" class="card-img-top profile-img">  
+            </div>
+            <h3>Random Guy</h3>
+            <p>Professional Loafer</p>
+            <p>This guy does absolutely nothing, and he's really good at it. His motto is "Why do today what you can put off forever?"</p>
+          </div>
+        </div>
+    
+        <div class="text-center mt-5">
+          <h2>Our Mission</h2>
+          <p>To achieve peak nonsense and maximum inefficiency!</p>
+          <p>If it makes sense, we're not doing it right.</p>
+        </div>
+    
+        <div class="text-center mt-5 mb-5">
+          <h2>Contact Us</h2>
+          <p>If you need to reach us for some reason, don't. We're probably busy doing nothing important.</p>
+          <button class="btn btn-danger" href="{% url 'Books' %}">Do Not Click</button>
+        </div>
+      </div>
+
+    
+</body>
+</html>
